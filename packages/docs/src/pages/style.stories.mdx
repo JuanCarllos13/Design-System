@@ -1,0 +1,72 @@
+import { Meta } from "@storybook/addon-docs";
+import {
+  Heading,
+  Text,
+} from "@juancarllos-ui/react";
+
+<Meta title="Estilização" />
+
+# Estilização global
+
+Crie um página chamada styles, dentro dela um arquivo chamado global.ts
+
+Exemplo de estilo:
+
+```tsx
+import { globalCss } from "@juancarllos-ui/react";
+export const globalStyles = globalCss({
+  "*": {
+    boxSizing: "border-box",
+    padding: 0,
+    margin: 0,
+  },
+
+  body: {
+    backgroundColor: "$gray900",
+    color: "$gray100",
+    "-webkit-font-smoothing": "antialiased",
+  },
+});
+```
+
+Para o estilo funcionar em todos as páginas em seu projeto, caso você esteja utilizando Next.js, você deve import o arquivo style dentro do arquivo `_app.page.tsx`
+
+Exemplo:
+
+```jsx
+import { globalStyles } from "../styles/global";
+import type { AppProps } from "next/app";
+
+globalStyles();
+
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+```
+
+### Estilzando um Componente
+
+```jsx
+import { styled, Box, Heading, Text } from "@juancarllos-ui/react";
+
+export const FormError = styled(Text, {
+  color: "#f75a68",
+});
+
+```
+
+Como ficou o FormError com troca de cor de texto.
+
+<Heading css={{ color: "red" }} size="$sm">
+  Nome completo
+</Heading>
+
+Caso queira estilizar no seu própro arquivo tsx ou js, pode estilizar dá seguinte maneira:
+
+```jsx
+<Heading css={{ color: "red" }} size="$sm">
+  Nome completo
+</Heading>
+```
+
+
