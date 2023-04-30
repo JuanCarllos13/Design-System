@@ -1,5 +1,11 @@
 # @juancarllos-ui/react
 
+## 1.1.2
+
+### Patch Changes
+
+- Config docs
+
 ## 1.1.1
 
 ### Patch Changes
