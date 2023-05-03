@@ -1,5 +1,11 @@
 # @juancarllos-ui/react
 
+## 1.1.3
+
+### Patch Changes
+
+- Add new componente input
+
 ## 1.1.2
 
 ### Patch Changes
