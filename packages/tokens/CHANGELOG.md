@@ -1,5 +1,11 @@
 # @juancarllos-ui/tokens
 
+## 3.0.0
+
+### Major Changes
+
+- Remove info in Readme
+
 ## 2.0.0
 
 ### Major Changes

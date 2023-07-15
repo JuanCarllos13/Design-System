@@ -1,9 +1,3 @@
-import { Meta } from "@storybook/addon-docs";
-import {
-  Heading,
-  Text,
-} from "@juancarllos-ui/react";
-
 <Meta title="Home" />
 
 # Criado por Juan Carlos
