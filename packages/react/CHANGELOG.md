@@ -1,5 +1,11 @@
 # @juancarllos-ui/react
 
+## 2.0.0
+
+### Major Changes
+
+- Add Readme
+
 ## 1.1.3
 
 ### Patch Changes
